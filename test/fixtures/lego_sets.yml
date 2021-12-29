@@ -1,0 +1,6 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+volkswagen:
+  name: "Volkswagen T2 Camper Van"
+  description: "Whether you ’re reliving past adventures, planning future travels or simply want to celebrate your passion for camper vans, you’ll love this LEGO® Volkswagen T2 Camper Van (10279) model building project. Take your time building the camper van model then explore its detailed interior before placing it on display to remind you that there’s a world of adventure just around the corner."
+  item_number: "10279"
