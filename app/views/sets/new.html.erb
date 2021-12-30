@@ -1,16 +1,20 @@
 <h1>New Lego Set</h1>
 <%= form_with(scope: :set, url: sets_path, data: { turbo: false }) do |f| %>
-    <% @set.errors.full_messages.each do |err| %>
-        <li><%= err %></li>
-    <% end %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <ul>
+        <% @set.errors.full_messages.each do |err| %>
+            <li><%= err %></li>
+        <% end %>
+    </ul>
+    <%= f.label :name, class: "form-label" %>
+    <%= f.text_field :name, class: "form-control" %>
 
-    <%= f.label :item_number %>
-    <%= f.text_field :item_number %>
+    <%= f.label :item_number, class: "form-label" %>
+    <%= f.text_field :item_number, class: "form-control" %>
 
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.label :description, class: "form-label" %>
+    <%= f.text_area :description, class: "form-control" %>
+    <br />
 
-    <%= f.submit "Save" %>
+    <%= f.submit "Save", class: "btn btn-primary" %>
+    <%= link_to "Cancel", sets_path, class: "btn btn-danger" %>
 <% end %>
