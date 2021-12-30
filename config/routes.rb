@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-  resources :sets, only: [:index, :show]
+  resources :sets, only: [:index, :show, :new, :create]
 end
