@@ -2,5 +2,6 @@
 
 <% @sets.each do |set| %>
     <h2><%= link_to set.name, set_path(set) %></h2>
-    <p><%= set.item_number %></h2>
+    <p><%= set.item_number %></p>
 <% end %>
+<%= link_to "New Set", new_set_path %>
