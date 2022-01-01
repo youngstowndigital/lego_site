@@ -1,7 +1,9 @@
 <h1>Lego Sets</h1>
 
+<div class="row">
 <% @sets.each do |set| %>
-    <h2><%= link_to set.name, set_path(set) %></h2>
-    <p><%= set.item_number %></p>
+    <%= render 'set', set: set %>
 <% end %>
+</div>
+
 <%= link_to "New Set", new_set_path %>
