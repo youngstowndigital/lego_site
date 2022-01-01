@@ -4,7 +4,7 @@
     <div class="card-body">
         <h5 class="card-title"><%= set.name %></h5>
         <p class="card-text"><%= set.description %></p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <%= link_to "View Set", set_url(set), class: "btn btn-primary" %>
     </div>
     </div>
 </div>

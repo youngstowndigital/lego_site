@@ -6,8 +6,44 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-LegoSet.create([{
-    name: "Volkswagen T2 Camper Van", 
-    description: "Whether you ’re reliving past adventures, planning future travels or simply want to celebrate your passion for camper vans, you’ll love this LEGO® Volkswagen T2 Camper Van (10279) model building project. Take your time building the camper van model then explore its detailed interior before placing it on display to remind you that there’s a world of adventure just around the corner.", 
-    item_number: "10279"
-}])
+corvette = LegoSet.create({
+    name: "Chevrolet Corvette C8.R Race Car and 1968 Chevrolet Corvette", 
+    description: "The LEGO® Speed Champions Chevrolet Corvette C8.R Race Car and 1968 Chevrolet Corvette (76903) set makes a perfect gift for fans of high-performance automobiles. Kids and car enthusiasts get to collect and explore 2 groundbreaking Corvettes from different eras. Packed with realistic details, these epic cars are fun to build, great for display and awesome to race!", 
+    item_number: "76903"
+})
+
+corvette.image.attach(
+    io: File.open("#{Dir.pwd}/db/seed_images/corvette.jpg"), 
+    filename: 'corvette.jpg', 
+    content_type: 'image/jpg'
+)
+
+corvette.save
+
+challenger = LegoSet.create({
+    name: "Mopar Dodge//SRT Top Fuel Dragster and 1970 Dodge Challenger T/A", 
+    description: "Fans of fast vehicles will love this LEGO® Speed Champions Mopar Dodge//SRT Top Fuel Dragster and 1970 Dodge Challenger T/A (76904) building kit. Packed with realistic details, these amazing replica models deliver a rewarding building experience, are great for display and awesome to race.", 
+    item_number: "76904"
+})
+
+challenger.image.attach(
+    io: File.open("#{Dir.pwd}/db/seed_images/challenger.jpg"), 
+    filename: 'challenger.jpg', 
+    content_type: 'image/jpg'
+)
+
+challenger.save
+
+fordgt = LegoSet.create({
+    name: "Ford GT Heritage Edition and Bronco R", 
+    description: "Kids and car enthusiasts will love this LEGO® Speed Champions Ford GT Heritage Edition and Bronco R (76905) toy building set. Packed with realistic details, these amazing replica models deliver a rewarding building experience, look fantastic on display and are awesome for epic off-road and on-track race action!", 
+    item_number: "76905"
+})
+
+fordgt.image.attach(
+    io: File.open("#{Dir.pwd}/db/seed_images/fordgt.jpg"), 
+    filename: 'fordgt.jpg', 
+    content_type: 'image/jpg'
+)
+
+fordgt.save
