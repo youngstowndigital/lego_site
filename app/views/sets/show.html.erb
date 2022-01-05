@@ -1,5 +1,6 @@
 <%= link_to "Back", sets_path %>
 <%= link_to "Edit", edit_set_path(@set) %>
+<%= link_to "Delete", set_path(@set), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 <h1><%= @set.name %></h1>
 <p><%= @set.item_number %></p>
 <p><%= @set.description %></p>

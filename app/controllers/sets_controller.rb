@@ -35,6 +35,12 @@ class SetsController < ApplicationController
         end
     end
 
+    def destroy
+        @set = LegoSet.find(params[:id])
+        @set.destroy
+        redirect_to sets_path, status: :see_other
+    end
+
     private
 
     def lego_set_params
