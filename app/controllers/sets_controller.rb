@@ -7,6 +7,10 @@ class SetsController < ApplicationController
         @set = LegoSet.find(params[:id])
     end
 
+    def edit
+        @set = LegoSet.find(params[:id])
+    end
+
     def new
         @set = LegoSet.new
     end
@@ -19,6 +23,15 @@ class SetsController < ApplicationController
             redirect_to set_path @set
         else
             render :new
+        end
+    end
+
+    def update
+        @set = LegoSet.find(params[:id])
+        if @set.update(lego_set_params)
+            redirect_to set_path @set
+        else
+            render 'edit'
         end
     end
 
