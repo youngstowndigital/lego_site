@@ -3,7 +3,7 @@
     <%= image_tag set.image.variant(resize_to_limit: [500, 500]) if set.image.attached? %>
     <div class="card-body">
         <h5 class="card-title"><%= set.name %></h5>
-        <p class="card-text"><%= set.description %></p>
+        <p class="card-text"><%= set.short_description %></p>
         <%= link_to "View Set", set_url(set), class: "btn btn-primary" %>
     </div>
     </div>
