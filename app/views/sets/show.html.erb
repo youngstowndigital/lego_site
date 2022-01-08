@@ -4,4 +4,7 @@
 <h1><%= @set.name %></h1>
 <p><%= @set.item_number %></p>
 <p><%= @set.description %></p>
+<%= link_to "Download Instructions", rails_blob_path(@set.instructions, disposition: :inline), class: "btn btn-primary", target: :_blank %>
+<br />
+<br />
 <%= image_tag @set.image.variant(resize_to_limit: [500, 500]) if @set.image.attached? %>
