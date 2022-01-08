@@ -1,20 +1,30 @@
-<h1>Lego App</h1>
+<div class="py-5 text-center">
+    <%= image_tag "lego_logo.png", class: "d-block mx-auto mb-4 logo" %>
+    <h1>Lego App</h1>
+</div>
 <br />
-<h2>Manage</h2>
-<p>
-    Manage your builds from start to finish.
-    Lego App comes with all the functionality you need to facilitate your build.
-</p>
+<div class="row">
+    <div class="col-sm-4">
+        <h2>Manage</h2>
+        <p>
+            Manage your builds from start to finish.
+            Lego App comes with all the functionality you need to facilitate your build.
+        </p>
+    </div>
 
-<h2>Share</h2>
-    Upload pictures of your builds to look at later and share with the Lego App community.
-<p>
+    <div class="col-sm-4">
+        <h2>Share</h2>
+        <p>
+            Upload pictures of your builds to look at later and share with the Lego App community.
+        </p>
+    </div>
 
-</p>
-
-<h2>Archive</h2>
-<p>
-    Save your instructions and documentation for use later if you ever deconstruct your sets.
-</p>
+    <div class="col-sm-4">
+        <h2>Archive</h2>
+        <p>
+            Save your instructions and documentation for use later if you ever deconstruct your sets.
+        </p>
+    </div>
+</div>
 
 <%= link_to "Sets", sets_path, class: "btn btn-primary" %>
