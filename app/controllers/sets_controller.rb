@@ -18,6 +18,7 @@ class SetsController < ApplicationController
     def create
         @set = LegoSet.new(lego_set_params)
         @set.image.attach(params[:set][:image])
+        @set.instructions.attach(params[:set][:instructions])
 
         if @set.save
             redirect_to set_path @set
@@ -44,6 +45,6 @@ class SetsController < ApplicationController
     private
 
     def lego_set_params
-        params.require(:set).permit(:name, :description, :item_number, :image)
+        params.require(:set).permit(:name, :description, :item_number, :image, :instructions)
     end
 end

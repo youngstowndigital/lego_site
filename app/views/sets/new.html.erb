@@ -16,7 +16,13 @@
 
     <br />
     <span class="image">
+        <%= f.label :image, class: "form-label" %>
         <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png,image/jpg" %>
+    </span>
+
+    <span class="instructions">
+        <%= f.label :instructions, class: "form-label" %>
+        <%= f.file_field :instructions, accept: "application/pdf" %>
     </span>
     <br />
     <br />
