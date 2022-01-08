@@ -18,6 +18,12 @@ corvette.image.attach(
     content_type: 'image/jpg'
 )
 
+corvette.instructions.attach(
+    io: File.open("#{Dir.pwd}/db/seed_instructions/corvette.pdf"), 
+    filename: 'corvette.pdf', 
+    content_type: 'application/pdf'
+)
+
 corvette.save
 
 challenger = LegoSet.create({
@@ -32,6 +38,12 @@ challenger.image.attach(
     content_type: 'image/jpg'
 )
 
+challenger.instructions.attach(
+    io: File.open("#{Dir.pwd}/db/seed_instructions/challenger.pdf"), 
+    filename: 'challenger.pdf', 
+    content_type: 'application/pdf'
+)
+
 challenger.save
 
 fordgt = LegoSet.create({
@@ -44,6 +56,12 @@ fordgt.image.attach(
     io: File.open("#{Dir.pwd}/db/seed_images/fordgt.jpg"), 
     filename: 'fordgt.jpg', 
     content_type: 'image/jpg'
+)
+
+fordgt.instructions.attach(
+    io: File.open("#{Dir.pwd}/db/seed_instructions/fordgt.pdf"), 
+    filename: 'fordgt.pdf', 
+    content_type: 'application/pdf'
 )
 
 fordgt.save
