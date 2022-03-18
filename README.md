@@ -1,24 +1,34 @@
-# README
+# Lego Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the repo for Lego Site. A site for storing info about the different lego sets I've built
 
-Things you may want to cover:
+## Install
 
-* Ruby version
+cd into the root of the repository and run the following commands:
 
-* System dependencies
+Install gem dependencies:
+`
+bundle install
+`
 
-* Configuration
+Migrate database:
+`
+rails db:migrate
+`
 
-* Database creation
+## Dependencies
 
-* Database initialization
+This project requires ruby and ruby on rails to be installed (https://rubyonrails.org)
 
-* How to run the test suite
+## Run
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the following command:
 
-* Deployment instructions
+`
+rails s
+`
 
-* ...
+## Deployment
+
+This is currently deployed on my raspberrypi on my local network. This was the guide used:
+https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/standalone/oss/deploy_app_main.html
