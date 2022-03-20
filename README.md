@@ -11,6 +11,11 @@ Install gem dependencies:
 bundle install
 `
 
+Install active storage:
+`
+rails active_storage:install
+`
+
 Migrate database:
 `
 rails db:migrate
@@ -19,6 +24,8 @@ rails db:migrate
 ## Dependencies
 
 This project requires ruby and ruby on rails to be installed (https://rubyonrails.org)
+
+ImageMagick
 
 ## Run
 
