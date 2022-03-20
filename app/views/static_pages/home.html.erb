@@ -4,27 +4,47 @@
 </div>
 <br />
 <div class="row">
-    <div class="col-sm-4">
-        <h2>Manage</h2>
-        <p>
-            Manage your builds from start to finish.
-            Lego App comes with all the functionality you need to facilitate your build.
-        </p>
+    <div class="col-sm-4 py-2">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>Manage</h2>
+                </div>
+                <p class="card-text">
+                    Manage your builds.
+                    Lego App comes with all the functionality you need to facilitate your build.
+                </p>
+                <%= link_to "View Sets", sets_path, class: "btn btn-primary" %>
+            </div>
+        </div>
     </div>
 
-    <div class="col-sm-4">
-        <h2>Share</h2>
-        <p>
-            Upload pictures of your builds to look at later and share with the Lego App community.
-        </p>
+    <div class="col-sm-4 py-2">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>Share</h2>
+                </div>
+                <p class="card-text">
+                    Upload pictures of your builds to look at later and share with the Lego App community.
+                </p>
+                <%= link_to "Share Sets", new_set_path, class: "btn btn-primary" %>
+            </div>
+        </div>
     </div>
 
-    <div class="col-sm-4">
-        <h2>Archive</h2>
-        <p>
-            Save your instructions and documentation for use later if you ever deconstruct your sets.
-        </p>
+    <div class="col-sm-4 py-2">
+        <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Archive</h2>
+                    </div>
+                    <p class="card-text">
+                        Save your instructions and documentation for use later if you ever deconstruct your sets.
+                    </p>
+                    <%= link_to "Add Set", new_set_path, class: "btn btn-primary" %>
+                </div>
+            </div>
+        </div>     
     </div>
 </div>
-
-<%= link_to "Sets", sets_path, class: "btn btn-primary" %>
